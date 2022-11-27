@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RGB to Hex Converter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body onload="setBgColor('A0C0D0')">
+    <div class="container-grid">
+      <div class="container-item">
+        <div class="header-grid">
+          <div class="header-grid-item header-logo"></div>
+          <div class="header-grid-item header-name">Neil</div>
+          <div class="header-grid-item header-nav"></div>
+        </div>
+      </div>
+      
+      <div class="container-item"> 
+        <div class="main" id="main">
+          <div class="content">  
+            <div class="content-item" id="left">
+              <div class="rbg-input">
+                <label for="name">R:</label>
+                <input type="text" id="red" name="red" required minlength="1" maxlength="3" value="160" size="10">
+              </div>
+              <div class="rbg-input">
+                <label for="name">G:</label>
+                <input type="text" id="green" name="green" required minlength="1" maxlength="3" value="192" size="10">  
+              </div>
+              <div class="rbg-input">
+                <label for="name">B:</label>
+                <input type="text" id="blue" name="blue" required minlength="1" maxlength="3" value="208" size="10">  
+              </div>
+            </div>
+           
+            <div class="content-item" id="center">
+              <div class="buttons"> 
+                <div class="btn" id="rgbToHex" onclick="go('rgbToHex')">
+                  <p>RGB to Hex----&gt;</p>
+                </div>
+                <div class="btn" id="hexToRgb" onclick="go('hexToRgb')">
+                  <p>&lt;---- Hex to RGB</p>
+                </div>
+              </div>  
+            </div>
+        
+            <div class="content-item" id="right">
+              <label for="name">Hex (#):</label>
+              <input type="text" id="hex" name="hex" required minlength="6" maxlength="6" value="A0C0D0" size="10">  
+            </div>
+           
+          </div>
+        
+        </div>
+      </div>
+  
+      <div class="container-item">
+        <div class="footer">
+          RGB to Hex v1.0 by Neil
+        </div>
+      </div>
+    </div>
+    
+  </body>
+  <script src="main.js"></script>
+</html>
